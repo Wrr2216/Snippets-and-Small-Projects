@@ -1,5 +1,7 @@
 <?php
 
+// Script created by Logan Miller on 1/3/2023
+
 // Handle the incoming request for action or heartbeat from bash scripts on client devices
 // This is the only file that should be called from the client devices
 
