@@ -1,7 +1,5 @@
 <?php
 
-// Script created by Logan Miller on 1/3/2023
-
 include 'control.php';
 
 $id = intval($_GET['id']);
@@ -51,6 +49,22 @@ if($_GET['action'] == 'createCommand'){
             <input type="text" name="id" placeholder="ID">
             <input type="text" name="command" placeholder="Command">
             <input type="submit" value="Create Command">
+        </form>
+
+        <!-- Edit Device -->
+        <form action="admin.php" method="get">
+            <input type="hidden" name="password" value="******">
+            <input type="hidden" name="action" value="edit">
+            <input type="text" name="id" placeholder="ID">
+            <input type="submit" value="Edit Device">
+        </form>
+
+        <!-- Delete Device -->
+        <form action="admin.php" method="get">
+            <input type="hidden" name="password" value="******">
+            <input type="hidden" name="action" value="delete">
+            <input type="text" name="id" placeholder="ID">
+            <input type="submit" value="Delete Device">
         </form>
 
         <h2>Devices</h2>
