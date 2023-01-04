@@ -1,5 +1,7 @@
 <?php
 
+// Script created by Logan Miller on 1/3/2023
+
 include 'control.php';
 
 $id = intval($_GET['id']);
